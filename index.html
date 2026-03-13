@@ -1,73 +1,99 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Video Page</title>
+    <title>음악 목록</title>
     <style>
         body {
             font-family: Arial, sans-serif;
-            text-align: center;
-            background-color: #f0f0f0;
-            color: #333;
+            background-color: #f4f4f9;
             margin: 0;
             padding: 0;
         }
-
-        .content {
-            margin-top: 50px;
-        }
-
-        h1 {
-            font-size: 36px;
-            color: #2C3E50;
-        }
-
-        video {
-            width: 80%;
+        .container {
             max-width: 800px;
-            margin: 20px 0;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
-
-        .video-container {
-            margin-top: 30px;
+        h1 {
+            text-align: center;
+            color: #333;
         }
-
-        footer {
-            margin-top: 50px;
-            font-size: 14px;
-            color: #777;
+        .music-list {
+            list-style: none;
+            padding: 0;
+        }
+        .music-item {
+            margin-bottom: 15px;
+            padding: 10px;
+            background-color: #fafafa;
+            border-radius: 5px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        .music-item button {
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            padding: 8px 16px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .music-item button:hover {
+            background-color: #0056b3;
+        }
+        audio {
+            width: 100%;
+            margin-top: 10px;
         }
     </style>
 </head>
 <body>
-
-    <div class="content">
-        <h1>Welcome to My Video Page</h1>
-
-        <div class="video-container">
-            <p>Watch the video below:</p>
-            <!-- 비디오 1 -->
-            <video controls>
-                <source src="https://github.com/yo653/HaeolSchoolSongRemix/raw/main/assets/videos/EDM%20Long5(%EB%BD%95%EC%A7%9D%EA%B5%AC%EA%B0%84%EC%B6%94%EC%B6%9C).wav" type="audio/wav">
-                Your browser does not support the video tag.
-            </video>
-        </div>
-
-        <div class="video-container">
-            <p>Another video:</p>
-            <!-- 비디오 2 -->
-            <video controls>
-                <source src="https://github.com/yo653/HaeolSchoolSongRemix/raw/main/assets/videos/heavy%20drum%20bass%20piano%20same%20bpm%202.wav" type="audio/wav">
-                Your browser does not support the video tag.
-            </video>
-        </div>
-
+    <div class="container">
+        <h1>음악 파일 목록</h1>
+        <ul class="music-list">
+            <li class="music-item">
+                <span>EDM Long5(뽕짝구간추출).wav</span>
+                <audio controls>
+                    <source src="EDM%20Long5(%EB%BD%95%EC%A7%9D%EA%B5%AC%EA%B0%84%EC%B6%94%EC%B6%9C).wav" type="audio/wav">
+                    Your browser does not support the audio element.
+                </audio>
+            </li>
+            <li class="music-item">
+                <span>heavy drum bass piano same bpm 2.wav</span>
+                <audio controls>
+                    <source src="heavy%20drum%20bass%20piano%20same%20bpm%202.wav" type="audio/wav">
+                    Your browser does not support the audio element.
+                </audio>
+            </li>
+            <li class="music-item">
+                <span>heavy drum bass piano same bpm 별로인거 끝에 자르고 다듬음.wav</span>
+                <audio controls>
+                    <source src="heavy%20drum%20bass%20piano%20same%20bpm%20%EB%B3%84%EB%A1%9C%EC%9D%B8%EA%B1%B0%20%EB%81%9D%EC%97%90%20%EC%9E%90%EB%A5%98%20%EB%8B%A4%EB%93%8C%EC%9D%8C.wav" type="audio/wav">
+                    Your browser does not support the audio element.
+                </audio>
+            </li>
+            <li class="music-item">
+                <span>namu EDM remix with heavy bass same bpm.wav</span>
+                <audio controls>
+                    <source src="namu%20EDM%20remix%20with%20heavy%20bass%20same%20bpm.wav" type="audio/wav">
+                    Your browser does not support the audio element.
+                </audio>
+            </li>
+            <li class="music-item">
+                <span>namu EDM remix with heavy bass same bpm+Long5.wav</span>
+                <audio controls>
+                    <source src="namu%20EDM%20remix%20with%20heavy%20bass%20same%20bpm%2BLong5.wav" type="audio/wav">
+                    Your browser does not support the audio element.
+                </audio>
+            </li>
+        </ul>
     </div>
-
-    <footer>
-        <p>&copy; 2026 Your Website</p>
-    </footer>
-
 </body>
 </html>
