@@ -1,12 +1,11 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>장원식의 HSSR 프로젝트</title>
 
 <style>
-
 body {
   font-family: Arial, sans-serif;
   background-color: #121212;
@@ -51,6 +50,8 @@ h3 {
 .music-item span {
   font-size: 16px;
   font-weight: bold;
+  display: block;
+  margin-bottom: 8px;
 }
 
 audio {
@@ -59,56 +60,52 @@ audio {
   filter: invert(1) hue-rotate(180deg);
 }
 
-a {
+/* 유튜브 링크 스타일 (오디오 플레이어와 비슷하게) */
+.youtube-link {
+  font-weight: bold;
+  font-size: 16px;
+  color: #1db954;
+  text-decoration: none;
+  display: inline-block;
+  margin-top: 8px;
+  padding: 8px 12px;
+  border: 1px solid #1db954;
+  border-radius: 6px;
+  transition: background-color 0.2s, color 0.2s;
+}
+
+.youtube-link:hover {
+  background-color: #1db954;
+  color: #121212;
+  text-decoration: none;
+}
+
+/* 학교홈페이지 및 단축 URL 링크 초록색 적용 */
+p a {
   color: #1db954;
   text-decoration: none;
 }
 
-a:hover {
+p a:hover {
   text-decoration: underline;
 }
-
 </style>
 </head>
 
 <body>
-
 <div class="container">
 
 <p style="text-align:left;font-size:14px;">
-
-<a href="http://www.daeguhaeol.dge.sc.kr//" target="_blank">
-학교홈페이지
-</a><br>
-
-<a href="http://해올고등학교.메인.한국/" target="_blank">
-Short URL 1: 해올고등학교.메인.한국
-</a><br>
-
-<a href="http://해올고등학교.웹.한국/" target="_blank">
-Short URL 2: 해올고등학교.웹.한국
-</a><br>
-
-<a href="http://교가리믹스.메인.한국/" target="_blank">
-Short URL 3: 교가리믹스.메인.한국
-</a><br>
-
-<a href="http://교가리믹스.웹.한국/" target="_blank">
-Short URL 4: 교가리믹스.웹.한국
-</a><br>
-
-<a href="http://HaeolSchoolSongRemix.p-e.kr/" target="_blank">
-Short URL 5: HaeolSchoolSongRemix.p-e.kr
-</a><br>
-
-<a href="http://HaeolSchoolSongRemix.kro.kr/" target="_blank">
-Short URL 6: HaeolSchoolSongRemix.kro.kr
-</a><br>
-
-<span style="font-size:12px;color:#aaa;">
-마지막 수정: 2026/03/14 14:30 / 피드백은 언제나 환영입니다.
-</span>
-
+  <a href="http://www.daeguhaeol.dge.sc.kr//" target="_blank">학교홈페이지</a><br />
+  <a href="http://해올고등학교.메인.한국/" target="_blank">Short URL 1: 해올고등학교.메인.한국</a><br />
+  <a href="http://해올고등학교.웹.한국/" target="_blank">Short URL 2: 해올고등학교.웹.한국</a><br />
+  <a href="http://교가리믹스.메인.한국/" target="_blank">Short URL 3: 교가리믹스.메인.한국</a><br />
+  <a href="http://교가리믹스.웹.한국/" target="_blank">Short URL 4: 교가리믹스.웹.한국</a><br />
+  <a href="http://HaeolSchoolSongRemix.p-e.kr/" target="_blank">Short URL 5: HaeolSchoolSongRemix.p-e.kr</a><br />
+  <a href="http://HaeolSchoolSongRemix.kro.kr/" target="_blank">Short URL 6: HaeolSchoolSongRemix.kro.kr</a><br />
+  <span style="font-size:12px;color:#aaa;">
+    마지막 수정: 2026/03/14 14:30 / 피드백은 언제나 환영입니다.
+  </span>
 </p>
 
 <h1>장원식의 HSSR 프로젝트</h1>
@@ -117,45 +114,68 @@ Short URL 6: HaeolSchoolSongRemix.kro.kr
 <ul class="music-list">
 
 <li class="music-item">
-<span>EDM Long5(구간반복 Test)</span>
-<audio controls controlsList="nodownload noplaybackrate" loop>
-<source src="https://github.com/yo653/HaeolSchoolSongRemix/raw/main/assets/videos/EDM%20Long5(%EB%BD%95%EC%A7%9D%EA%B5%AC%EA%B0%84%EC%B6%94%EC%B6%9C).wav" type="audio/wav">
-</audio>
+  <span>EDM Long5(구간반복 Test)</span>
+  <audio controls controlsList="nodownload noplaybackrate" loop>
+    <source src="https://github.com/yo653/HaeolSchoolSongRemix/raw/main/assets/videos/EDM%20Long5(%EB%BD%95%EC%A7%9D%EA%B5%AC%EA%B0%84%EC%B6%94%EC%B6%9C).wav" type="audio/wav" />
+  </audio>
 </li>
 
 <li class="music-item">
-<span>piano2</span>
-<audio controls controlsList="nodownload noplaybackrate" loop>
-<source src="https://github.com/yo653/HaeolSchoolSongRemix/raw/main/assets/videos/heavy%20drum%20bass%20piano%20same%20bpm%202.wav" type="audio/wav">
-</audio>
+  <span>piano2</span>
+  <audio controls controlsList="nodownload noplaybackrate" loop>
+    <source src="https://github.com/yo653/HaeolSchoolSongRemix/raw/main/assets/videos/heavy%20drum%20bass%20piano%20same%20bpm%202.wav" type="audio/wav" />
+  </audio>
 </li>
 
 <li class="music-item">
-<span>piano1</span>
-<audio controls controlsList="nodownload noplaybackrate" loop>
-<source src="https://github.com/yo653/HaeolSchoolSongRemix/raw/main/assets/videos/heavy%20drum%20bass%20piano%20same%20bpm%20%EB%B3%84%EB%A1%9C%EC%9D%B8%EA%B1%B0%20%EB%81%9D%EC%97%90%20%EC%9E%90%EB%A5%B4%EA%B3%A0%20%EB%8B%A4%EB%93%AC%EC%9D%8C.wav" type="audio/wav">
-</audio>
+  <span>piano1</span>
+  <audio controls controlsList="nodownload noplaybackrate" loop>
+    <source src="https://github.com/yo653/HaeolSchoolSongRemix/raw/main/assets/videos/heavy%20drum%20bass%20piano%20same%20bpm%20%EB%B3%84%EB%A1%9C%EC%9D%B8%EA%B1%B0%20%EB%81%9D%EC%97%90%20%EC%9E%90%EB%A5%B4%EA%B3%A0%20%EB%8B%A4%EB%93%AC%EC%9D%8C.wav" type="audio/wav" />
+  </audio>
 </li>
 
 <li class="music-item">
-<span>EDM remix</span>
-<audio controls controlsList="nodownload noplaybackrate" loop>
-<source src="https://github.com/yo653/HaeolSchoolSongRemix/raw/main/assets/videos/namu%20EDM%20remix%20with%20heavy%20bass%20same%20bpm.wav" type="audio/wav">
-</audio>
+  <span>EDM remix</span>
+  <audio controls controlsList="nodownload noplaybackrate" loop>
+    <source src="https://github.com/yo653/HaeolSchoolSongRemix/raw/main/assets/videos/namu%20EDM%20remix%20with%20heavy%20bass%20same%20bpm.wav" type="audio/wav" />
+  </audio>
 </li>
 
 <li class="music-item">
-<span>EDM remix+Long5</span>
-<audio controls controlsList="nodownload noplaybackrate" loop>
-<source src="https://github.com/yo653/HaeolSchoolSongRemix/raw/main/assets/videos/namu%20EDM%20remix%20with%20heavy%20bass%20same%20bpm%2BLong5.wav" type="audio/wav">
-</audio>
+  <span>EDM remix+Long5</span>
+  <audio controls controlsList="nodownload noplaybackrate" loop>
+    <source src="https://github.com/yo653/HaeolSchoolSongRemix/raw/main/assets/videos/namu%20EDM%20remix%20with%20heavy%20bass%20same%20bpm%2BLong5.wav" type="audio/wav" />
+  </audio>
 </li>
 
 <li class="music-item">
-<span>EDM remix+Long5 v2</span>
-<audio controls controlsList="nodownload noplaybackrate" loop>
-<source src="https://github.com/yo653/HaeolSchoolSongRemix/raw/main/assets/videos/namu%20EDM%20remix%20with%20heavy%20bass%20same%20bpm%2BLong5v2.wav" type="audio/wav">
-</audio>
+  <span>EDM remix+Long5 v2</span>
+  <audio controls controlsList="nodownload noplaybackrate" loop>
+    <source src="https://github.com/yo653/HaeolSchoolSongRemix/raw/main/assets/videos/namu%20EDM%20remix%20with%20heavy%20bass%20same%20bpm%2BLong5v2.wav" type="audio/wav" />
+  </audio>
+</li>
+
+<!-- 유튜브 링크로 대체된 부분 -->
+<li class="music-item">
+  <span>강민서, 정재연 - 나무가 나무에게(사제동행 Ver.)</span>
+  <a
+    href="https://youtu.be/_nmKdETCGUQ"
+    target="_blank"
+    rel="noopener noreferrer"
+    class="youtube-link"
+    >▶️ 유튜브에서 보기</a
+  >
+</li>
+
+<li class="music-item">
+  <span>강민서 - 나무가 나무에게(대구해올중고등학교 교가)</span>
+  <a
+    href="https://youtu.be/RPSb5egYUao"
+    target="_blank"
+    rel="noopener noreferrer"
+    class="youtube-link"
+    >▶️ 유튜브에서 보기</a
+  >
 </li>
 
 </ul>
@@ -163,43 +183,32 @@ Short URL 6: HaeolSchoolSongRemix.kro.kr
 </div>
 
 <script>
-
 /* 한 번에 하나만 재생 */
-
 const players = document.querySelectorAll("audio");
-
-players.forEach(player => {
-player.addEventListener("play", () => {
-
-players.forEach(other => {
-if (other !== player) {
-other.pause();
-other.currentTime = 0;
-}
-});
-
-});
+players.forEach((player) => {
+  player.addEventListener("play", () => {
+    players.forEach((other) => {
+      if (other !== player) {
+        other.pause();
+        other.currentTime = 0;
+      }
+    });
+  });
 });
 
 /* 우클릭 차단 */
-
-document.addEventListener("contextmenu", e => e.preventDefault());
+document.addEventListener("contextmenu", (e) => e.preventDefault());
 
 /* 개발자도구 일부 차단 */
-
-document.addEventListener("keydown", e => {
-
-if (
-e.key === "F12" ||
-(e.ctrlKey && e.shiftKey && e.key === "I") ||
-(e.ctrlKey && e.key === "U")
-) {
-e.preventDefault();
-}
-
+document.addEventListener("keydown", (e) => {
+  if (
+    e.key === "F12" ||
+    (e.ctrlKey && e.shiftKey && e.key === "I") ||
+    (e.ctrlKey && e.key === "U")
+  ) {
+    e.preventDefault();
+  }
 });
-
 </script>
-
 </body>
 </html>
