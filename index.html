@@ -46,6 +46,12 @@ h3 {
   background-color: #282828;
 }
 
+/* 강조 표시된 항목 */
+.music-item.highlight {
+  background-color: #1db954;
+  color: #121212;
+}
+
 /* 제목 클릭 가능하게 */
 .music-item span {
   font-size: 16px;
@@ -119,26 +125,6 @@ p a:hover {
 
 <ul class="music-list">
 
-<li class="music-item collapsed">
-  <span>EDM Long5(구간반복 Test)</span>
-  <audio controls controlsList="nodownload noplaybackrate" loop>
-    <source src="https://github.com/yo653/HaeolSchoolSongRemix/raw/main/assets/videos/EDM%20Long5(%EB%BD%95%EC%A7%9D%EA%B5%AC%EA%B0%84%EC%B6%94%EC%B6%9C).wav" type="audio/wav" />
-  </audio>
-</li>
-
-<li class="music-item">
-  <span>piano2</span>
-  <audio controls controlsList="nodownload noplaybackrate" loop>
-    <source src="https://github.com/yo653/HaeolSchoolSongRemix/raw/main/assets/videos/heavy%20drum%20bass%20piano%20same%20bpm%202.wav" type="audio/wav" />
-  </audio>
-</li>
-
-<li class="music-item">
-  <span>piano1</span>
-  <audio controls controlsList="nodownload noplaybackrate" loop>
-    <source src="https://github.com/yo653/HaeolSchoolSongRemix/raw/main/assets/videos/heavy%20drum%20bass%20piano%20same%20bpm%20%EB%B3%84%EB%A1%9C%EC%9D%B8%EA%B1%B0%20%EB%81%9D%EC%97%90%20%EC%9E%90%EB%A5%B4%EA%B3%A0%20%EB%8B%A4%EB%93%AC%EC%9D%8C.wav" type="audio/wav" />
-  </audio>
-</li>
 
 <li class="music-item collapsed">
   <span>EDM remix</span>
@@ -154,7 +140,7 @@ p a:hover {
   </audio>
 </li>
 
-<li class="music-item">
+<li class="music-item highlight">
   <span>EDM remix+Long5 v2</span>
   <audio controls controlsList="nodownload noplaybackrate" loop>
     <source src="https://github.com/yo653/HaeolSchoolSongRemix/raw/main/assets/videos/namu%20EDM%20remix%20with%20heavy%20bass%20same%20bpm%2BLong5v2.wav" type="audio/wav" />
@@ -165,6 +151,27 @@ p a:hover {
   <span>v2 mr</span>
   <audio controls controlsList="nodownload noplaybackrate" loop>
     <source src="https://github.com/yo653/HaeolSchoolSongRemix/raw/main/assets/videos/v2%20mr.mp3" type="audio/wav" />
+  </audio>
+</li>
+
+<li class="music-item collapsed">
+  <span>EDM Long5(구간반복 Test)</span>
+  <audio controls controlsList="nodownload noplaybackrate" loop>
+    <source src="https://github.com/yo653/HaeolSchoolSongRemix/raw/main/assets/videos/EDM%20Long5(%EB%BD%95%EC%A7%9D%EA%B5%AC%EA%B0%84%EC%B6%94%EC%B6%9C).wav" type="audio/wav" />
+  </audio>
+</li>
+
+<li class="music-item">
+  <span>piano1</span>
+  <audio controls controlsList="nodownload noplaybackrate" loop>
+    <source src="https://github.com/yo653/HaeolSchoolSongRemix/raw/main/assets/videos/heavy%20drum%20bass%20piano%20same%20bpm%20%EB%B3%84%EB%A1%9C%EC%9D%B8%EA%B1%B0%20%EB%81%9D%EC%97%90%20%EC%9E%90%EB%A5%B4%EA%B3%A0%20%EB%8B%A4%EB%93%AC%EC%9D%8C.wav" type="audio/wav" />
+  </audio>
+</li>
+
+<li class="music-item">
+  <span>piano2</span>
+  <audio controls controlsList="nodownload noplaybackrate" loop>
+    <source src="https://github.com/yo653/HaeolSchoolSongRemix/raw/main/assets/videos/heavy%20drum%20bass%20piano%20same%20bpm%202.wav" type="audio/wav" />
   </audio>
 </li>
 
@@ -191,7 +198,6 @@ p a:hover {
     >▶️ 유튜브에서 보기</a
   >
 </li>
-
 
 </ul>
 
