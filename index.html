@@ -46,11 +46,18 @@ h3 {
   background-color: #282828;
 }
 
+/* 제목 클릭 가능하게 */
 .music-item span {
   font-size: 16px;
   font-weight: bold;
   display: block;
   margin-bottom: 8px;
+  cursor: pointer;
+}
+
+/* 접힘 상태 */
+.music-item.collapsed audio {
+  display: none;
 }
 
 audio {
@@ -112,7 +119,7 @@ p a:hover {
 
 <ul class="music-list">
 
-<li class="music-item">
+<li class="music-item collapsed">
   <span>EDM Long5(구간반복 Test)</span>
   <audio controls controlsList="nodownload noplaybackrate" loop>
     <source src="https://github.com/yo653/HaeolSchoolSongRemix/raw/main/assets/videos/EDM%20Long5(%EB%BD%95%EC%A7%9D%EA%B5%AC%EA%B0%84%EC%B6%94%EC%B6%9C).wav" type="audio/wav" />
@@ -133,14 +140,14 @@ p a:hover {
   </audio>
 </li>
 
-<li class="music-item">
+<li class="music-item collapsed">
   <span>EDM remix</span>
   <audio controls controlsList="nodownload noplaybackrate" loop>
     <source src="https://github.com/yo653/HaeolSchoolSongRemix/raw/main/assets/videos/namu%20EDM%20remix%20with%20heavy%20bass%20same%20bpm.wav" type="audio/wav" />
   </audio>
 </li>
 
-<li class="music-item">
+<li class="music-item collapsed">
   <span>EDM remix+Long5</span>
   <audio controls controlsList="nodownload noplaybackrate" loop>
     <source src="https://github.com/yo653/HaeolSchoolSongRemix/raw/main/assets/videos/namu%20EDM%20remix%20with%20heavy%20bass%20same%20bpm%2BLong5.wav" type="audio/wav" />
@@ -160,6 +167,7 @@ p a:hover {
     <source src="https://github.com/yo653/HaeolSchoolSongRemix/raw/main/assets/videos/v2%20mr.mp3" type="audio/wav" />
   </audio>
 </li>
+
 
 <!-- 유튜브 링크로 대체된 부분 -->
 <li class="music-item">
@@ -184,6 +192,7 @@ p a:hover {
   >
 </li>
 
+
 </ul>
 
 </div>
@@ -199,6 +208,14 @@ players.forEach((player) => {
         other.currentTime = 0;
       }
     });
+  });
+});
+
+/* 접기/펼치기 기능 */
+document.querySelectorAll(".music-item span").forEach((title) => {
+  title.addEventListener("click", () => {
+    const item = title.parentElement;
+    item.classList.toggle("collapsed");
   });
 });
 
